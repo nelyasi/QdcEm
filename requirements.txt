@@ -1,4 +1,2 @@
-qiskit==0.52.0
-qutip==5.0.1
-matplotlib==3.9.1
-numpy==1.27.0
+sphinx
+sphinx-rtd-theme
