@@ -1,0 +1,9 @@
+{
+  "job_id": "d6i4ag860irc7392svr0",
+  "label": "G-654-E_step01",
+  "subfolder": "TP1-C1",
+  "created_at": "2026-03-01 13:55:13.064419+00:00",
+  "result": {
+    "raw": "PrimitiveResult([SamplerPubResult(data=DataBin(c=BitArray(<shape=(), num_shots=10000, num_bits=2>)), metadata={'circuit_metadata': {}})], metadata={'execution': {'execution_spans': ExecutionSpans([DoubleSliceSpan(<start='2026-03-01 13:55:16', stop='2026-03-01 13:55:19', size=10000>)])}, 'version': 2})"
+  }
+}

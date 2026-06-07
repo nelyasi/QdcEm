@@ -1,0 +1,9 @@
+{
+  "job_id": "d6hn1je48nic73an9900",
+  "label": "State10_step02",
+  "subfolder": "Grover",
+  "created_at": "2026-02-28 22:48:45.387758+00:00",
+  "result": {
+    "raw": "PrimitiveResult([SamplerPubResult(data=DataBin(c=BitArray(<shape=(), num_shots=10000, num_bits=6>)), metadata={'circuit_metadata': {}})], metadata={'execution': {'execution_spans': ExecutionSpans([DoubleSliceSpan(<start='2026-02-28 22:48:48', stop='2026-02-28 22:48:52', size=10000>)])}, 'version': 2})"
+  }
+}

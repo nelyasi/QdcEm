@@ -1,0 +1,7022 @@
+{
+  "backend": "ibm_torino",
+  "job_id": "d6i4bce33pjc73dkbig0",
+  "created_at": "2026-03-01 13:57:05.708738+00:00",
+  "metrics": {
+    "caller": "qiskit_ibm_runtime~sampler.py",
+    "qiskit_version": "qiskit_ibm_runtime-0.41.1,qiskit-2.1.2*,qiskit_aer-0.17.0*,qiskit_experiments-0.12.0",
+    "timestamps": {
+      "created": "2026-03-01T13:57:05.708738Z",
+      "finished": "2026-03-01T13:57:13.606823Z",
+      "running": "2026-03-01T13:57:07.385203Z"
+    },
+    "bss": {
+      "seconds": 4
+    },
+    "usage": {
+      "quantum_seconds": 4,
+      "seconds": 4
+    }
+  },
+  "current_properties_error": "'No backend matches the criteria. Learn more about available backends here https://quantum.cloud.ibm.com/docs/en/guides/qpu-information#view-your-resources'",
+  "backend_properties": {
+    "backend_name": "ibm_torino",
+    "backend_version": "1.0.0",
+    "last_update_date": "2026-02-26 19:46:00+00:00",
+    "qubits": [
+      [
+        {
+          "date": "2026-02-26 00:56:07+00:00",
+          "name": "prob_meas0_prep1",
+          "unit": "",
+          "value": 0.126953125
+        },
+        {
+          "date": "2026-02-26 00:56:07+00:00",
+          "name": "prob_meas1_prep0",
+          "unit": "",
+          "value": 0.11279296875
+        },
+        {
+          "date": "2026-02-26 00:56:07+00:00",
+          "name": "readout_error",
+          "unit": "",
+          "value": 0.119873046875
+        }
+      ],
+      [],
+      [
+        {
+          "date": "2026-02-26 00:56:07+00:00",
+          "name": "prob_meas0_prep1",
+          "unit": "",
+          "value": 0.056884765625
+        },
+        {
+          "date": "2026-02-26 00:56:07+00:00",
+          "name": "prob_meas1_prep0",
+          "unit": "",
+          "value": 0.0283203125
+        },
+        {
+          "date": "2026-02-26 00:56:07+00:00",
+          "name": "readout_error",
+          "unit": "",
+          "value": 0.0426025390625
+        }
+      ],
+      [],
+      [
+        {
+          "date": "2026-02-26 00:56:07+00:00",
+          "name": "prob_meas0_prep1",
+          "unit": "",
+          "value": 0.06494140625
+        },
+        {
+          "date": "2026-02-26 00:56:07+00:00",
+          "name": "prob_meas1_prep0",
+          "unit": "",
+          "value": 0.038330078125
+        },
+        {
+          "date": "2026-02-26 00:56:07+00:00",
+          "name": "readout_error",
+          "unit": "",
+          "value": 0.0516357421875
+        }
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "gates": [
+      {
+        "gate": "cz",
+        "qubits": [
+          0,
+          1
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0022744469437159798
+          }
+        ],
+        "name": "cz0_1"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          0,
+          15
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0023357983897290546
+          }
+        ],
+        "name": "cz0_15"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          1,
+          0
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0022744469437159798
+          }
+        ],
+        "name": "cz1_0"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          1,
+          2
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0023819072675637376
+          }
+        ],
+        "name": "cz1_2"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          2,
+          1
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0023819072675637376
+          }
+        ],
+        "name": "cz2_1"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          2,
+          3
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0013931360134540327
+          }
+        ],
+        "name": "cz2_3"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          3,
+          2
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0013931360134540327
+          }
+        ],
+        "name": "cz3_2"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          3,
+          4
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001738734617077714
+          }
+        ],
+        "name": "cz3_4"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          4,
+          3
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001738734617077714
+          }
+        ],
+        "name": "cz4_3"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          4,
+          5
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002046019858188808
+          }
+        ],
+        "name": "cz4_5"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          4,
+          16
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0017673018858865575
+          }
+        ],
+        "name": "cz4_16"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          5,
+          4
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002046019858188808
+          }
+        ],
+        "name": "cz5_4"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          5,
+          6
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002316583446579784
+          }
+        ],
+        "name": "cz5_6"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          6,
+          5
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002316583446579784
+          }
+        ],
+        "name": "cz6_5"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          6,
+          7
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001877965657950259
+          }
+        ],
+        "name": "cz6_7"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          7,
+          6
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001877965657950259
+          }
+        ],
+        "name": "cz7_6"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          7,
+          8
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0020426314447960225
+          }
+        ],
+        "name": "cz7_8"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          8,
+          7
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0020426314447960225
+          }
+        ],
+        "name": "cz8_7"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          8,
+          9
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002082636971206614
+          }
+        ],
+        "name": "cz8_9"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          8,
+          17
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0026094470132228265
+          }
+        ],
+        "name": "cz8_17"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          9,
+          8
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002082636971206614
+          }
+        ],
+        "name": "cz9_8"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          9,
+          10
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0014783525608580983
+          }
+        ],
+        "name": "cz9_10"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          10,
+          9
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0014783525608580983
+          }
+        ],
+        "name": "cz10_9"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          10,
+          11
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001248721247283896
+          }
+        ],
+        "name": "cz10_11"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          11,
+          10
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001248721247283896
+          }
+        ],
+        "name": "cz11_10"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          11,
+          12
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003544986873974393
+          }
+        ],
+        "name": "cz11_12"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          12,
+          11
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003544986873974393
+          }
+        ],
+        "name": "cz12_11"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          12,
+          13
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001599440852718681
+          }
+        ],
+        "name": "cz12_13"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          12,
+          18
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0014074561917430395
+          }
+        ],
+        "name": "cz12_18"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          13,
+          12
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001599440852718681
+          }
+        ],
+        "name": "cz13_12"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          13,
+          14
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002335253209039545
+          }
+        ],
+        "name": "cz13_14"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          14,
+          13
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002335253209039545
+          }
+        ],
+        "name": "cz14_13"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          15,
+          0
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0023357983897290546
+          }
+        ],
+        "name": "cz15_0"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          15,
+          19
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0035855323181370746
+          }
+        ],
+        "name": "cz15_19"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          16,
+          4
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0017673018858865575
+          }
+        ],
+        "name": "cz16_4"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          16,
+          23
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.012159586462350519
+          }
+        ],
+        "name": "cz16_23"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          17,
+          8
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0026094470132228265
+          }
+        ],
+        "name": "cz17_8"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          17,
+          27
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0028045669479543345
+          }
+        ],
+        "name": "cz17_27"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          18,
+          12
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0014074561917430395
+          }
+        ],
+        "name": "cz18_12"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          18,
+          31
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0016380322004146408
+          }
+        ],
+        "name": "cz18_31"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          19,
+          15
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0035855323181370746
+          }
+        ],
+        "name": "cz19_15"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          19,
+          20
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003909825934545419
+          }
+        ],
+        "name": "cz19_20"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          20,
+          19
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003909825934545419
+          }
+        ],
+        "name": "cz20_19"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          20,
+          21
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.005725273644826584
+          }
+        ],
+        "name": "cz20_21"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          21,
+          20
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.005725273644826584
+          }
+        ],
+        "name": "cz21_20"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          21,
+          22
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0026762251328097397
+          }
+        ],
+        "name": "cz21_22"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          21,
+          34
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0026867620460697406
+          }
+        ],
+        "name": "cz21_34"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          22,
+          21
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0026762251328097397
+          }
+        ],
+        "name": "cz22_21"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          22,
+          23
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.011526876100841327
+          }
+        ],
+        "name": "cz22_23"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          23,
+          16
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.012159586462350519
+          }
+        ],
+        "name": "cz23_16"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          23,
+          22
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.011526876100841327
+          }
+        ],
+        "name": "cz23_22"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          23,
+          24
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.010117111589954209
+          }
+        ],
+        "name": "cz23_24"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          24,
+          23
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.010117111589954209
+          }
+        ],
+        "name": "cz24_23"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          24,
+          25
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0015653622429484815
+          }
+        ],
+        "name": "cz24_25"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          25,
+          24
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0015653622429484815
+          }
+        ],
+        "name": "cz25_24"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          25,
+          26
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0011137851536585364
+          }
+        ],
+        "name": "cz25_26"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          25,
+          35
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002193526595139189
+          }
+        ],
+        "name": "cz25_35"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          26,
+          25
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0011137851536585364
+          }
+        ],
+        "name": "cz26_25"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          26,
+          27
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0014725479710482048
+          }
+        ],
+        "name": "cz26_27"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          27,
+          17
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0028045669479543345
+          }
+        ],
+        "name": "cz27_17"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          27,
+          26
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0014725479710482048
+          }
+        ],
+        "name": "cz27_26"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          27,
+          28
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0015718352209910524
+          }
+        ],
+        "name": "cz27_28"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          28,
+          27
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0015718352209910524
+          }
+        ],
+        "name": "cz28_27"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          28,
+          29
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0029965180232159327
+          }
+        ],
+        "name": "cz28_29"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          29,
+          28
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0029965180232159327
+          }
+        ],
+        "name": "cz29_28"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          29,
+          30
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002369415576671474
+          }
+        ],
+        "name": "cz29_30"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          29,
+          36
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002525541338388587
+          }
+        ],
+        "name": "cz29_36"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          30,
+          29
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002369415576671474
+          }
+        ],
+        "name": "cz30_29"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          30,
+          31
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00182038750748445
+          }
+        ],
+        "name": "cz30_31"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          31,
+          18
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0016380322004146408
+          }
+        ],
+        "name": "cz31_18"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          31,
+          30
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00182038750748445
+          }
+        ],
+        "name": "cz31_30"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          31,
+          32
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002756886078003673
+          }
+        ],
+        "name": "cz31_32"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          32,
+          31
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002756886078003673
+          }
+        ],
+        "name": "cz32_31"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          32,
+          33
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001828474859286111
+          }
+        ],
+        "name": "cz32_33"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          33,
+          32
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001828474859286111
+          }
+        ],
+        "name": "cz33_32"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          33,
+          37
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0029258629653319546
+          }
+        ],
+        "name": "cz33_37"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          34,
+          21
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0026867620460697406
+          }
+        ],
+        "name": "cz34_21"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          34,
+          40
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002387379347446289
+          }
+        ],
+        "name": "cz34_40"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          35,
+          25
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002193526595139189
+          }
+        ],
+        "name": "cz35_25"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          35,
+          44
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 1.0
+          }
+        ],
+        "name": "cz35_44"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          36,
+          29
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002525541338388587
+          }
+        ],
+        "name": "cz36_29"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          36,
+          48
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002300880602687433
+          }
+        ],
+        "name": "cz36_48"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          37,
+          33
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0029258629653319546
+          }
+        ],
+        "name": "cz37_33"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          37,
+          52
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002458021071119948
+          }
+        ],
+        "name": "cz37_52"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          38,
+          39
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0015946142357032012
+          }
+        ],
+        "name": "cz38_39"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          38,
+          53
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 1.0
+          }
+        ],
+        "name": "cz38_53"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          39,
+          38
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0015946142357032012
+          }
+        ],
+        "name": "cz39_38"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          39,
+          40
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0016564357324455325
+          }
+        ],
+        "name": "cz39_40"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          40,
+          34
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002387379347446289
+          }
+        ],
+        "name": "cz40_34"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          40,
+          39
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0016564357324455325
+          }
+        ],
+        "name": "cz40_39"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          40,
+          41
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.11302776948524525
+          }
+        ],
+        "name": "cz40_41"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          41,
+          40
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.11302776948524525
+          }
+        ],
+        "name": "cz41_40"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          41,
+          42
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.10043190418031982
+          }
+        ],
+        "name": "cz41_42"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          42,
+          41
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.10043190418031982
+          }
+        ],
+        "name": "cz42_41"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          42,
+          43
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0033393833288608288
+          }
+        ],
+        "name": "cz42_43"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          42,
+          54
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002431603353010542
+          }
+        ],
+        "name": "cz42_54"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          43,
+          42
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0033393833288608288
+          }
+        ],
+        "name": "cz43_42"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          43,
+          44
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 1.0
+          }
+        ],
+        "name": "cz43_44"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          44,
+          35
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 1.0
+          }
+        ],
+        "name": "cz44_35"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          44,
+          43
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 1.0
+          }
+        ],
+        "name": "cz44_43"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          44,
+          45
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002803358749648599
+          }
+        ],
+        "name": "cz44_45"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          45,
+          44
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002803358749648599
+          }
+        ],
+        "name": "cz45_44"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          45,
+          46
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0034589899893998632
+          }
+        ],
+        "name": "cz45_46"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          46,
+          45
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0034589899893998632
+          }
+        ],
+        "name": "cz46_45"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          46,
+          47
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0032046137472653002
+          }
+        ],
+        "name": "cz46_47"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          46,
+          55
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002274305595279441
+          }
+        ],
+        "name": "cz46_55"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          47,
+          46
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0032046137472653002
+          }
+        ],
+        "name": "cz47_46"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          47,
+          48
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00274848841096359
+          }
+        ],
+        "name": "cz47_48"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          48,
+          36
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002300880602687433
+          }
+        ],
+        "name": "cz48_36"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          48,
+          47
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00274848841096359
+          }
+        ],
+        "name": "cz48_47"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          48,
+          49
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0021681344011790504
+          }
+        ],
+        "name": "cz48_49"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          49,
+          48
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0021681344011790504
+          }
+        ],
+        "name": "cz49_48"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          49,
+          50
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00212737066821983
+          }
+        ],
+        "name": "cz49_50"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          50,
+          49
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00212737066821983
+          }
+        ],
+        "name": "cz50_49"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          50,
+          51
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0015055664800345814
+          }
+        ],
+        "name": "cz50_51"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          50,
+          56
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001846515885941119
+          }
+        ],
+        "name": "cz50_56"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          51,
+          50
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0015055664800345814
+          }
+        ],
+        "name": "cz51_50"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          51,
+          52
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002552760406226734
+          }
+        ],
+        "name": "cz51_52"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          52,
+          37
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002458021071119948
+          }
+        ],
+        "name": "cz52_37"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          52,
+          51
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002552760406226734
+          }
+        ],
+        "name": "cz52_51"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          53,
+          38
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 1.0
+          }
+        ],
+        "name": "cz53_38"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          53,
+          57
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 1.0
+          }
+        ],
+        "name": "cz53_57"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          54,
+          42
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002431603353010542
+          }
+        ],
+        "name": "cz54_42"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          54,
+          61
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.005653666019258957
+          }
+        ],
+        "name": "cz54_61"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          55,
+          46
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002274305595279441
+          }
+        ],
+        "name": "cz55_46"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          55,
+          65
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003640002857011576
+          }
+        ],
+        "name": "cz55_65"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          56,
+          50
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001846515885941119
+          }
+        ],
+        "name": "cz56_50"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          56,
+          69
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0038357128487368497
+          }
+        ],
+        "name": "cz56_69"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          57,
+          53
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 1.0
+          }
+        ],
+        "name": "cz57_53"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          57,
+          58
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002442180127882304
+          }
+        ],
+        "name": "cz57_58"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          58,
+          57
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002442180127882304
+          }
+        ],
+        "name": "cz58_57"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          58,
+          59
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.006349588114639482
+          }
+        ],
+        "name": "cz58_59"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          59,
+          58
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.006349588114639482
+          }
+        ],
+        "name": "cz59_58"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          59,
+          60
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0047003193474785265
+          }
+        ],
+        "name": "cz59_60"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          59,
+          72
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.005458933961344115
+          }
+        ],
+        "name": "cz59_72"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          60,
+          59
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0047003193474785265
+          }
+        ],
+        "name": "cz60_59"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          60,
+          61
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0016541602280217282
+          }
+        ],
+        "name": "cz60_61"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          61,
+          54
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.005653666019258957
+          }
+        ],
+        "name": "cz61_54"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          61,
+          60
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0016541602280217282
+          }
+        ],
+        "name": "cz61_60"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          61,
+          62
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0019096213433335008
+          }
+        ],
+        "name": "cz61_62"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          62,
+          61
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0019096213433335008
+          }
+        ],
+        "name": "cz62_61"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          62,
+          63
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003549182082027841
+          }
+        ],
+        "name": "cz62_63"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          63,
+          62
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003549182082027841
+          }
+        ],
+        "name": "cz63_62"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          63,
+          64
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002034258245593945
+          }
+        ],
+        "name": "cz63_64"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          63,
+          73
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0027508238725059975
+          }
+        ],
+        "name": "cz63_73"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          64,
+          63
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002034258245593945
+          }
+        ],
+        "name": "cz64_63"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          64,
+          65
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002695024759189951
+          }
+        ],
+        "name": "cz64_65"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          65,
+          55
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003640002857011576
+          }
+        ],
+        "name": "cz65_55"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          65,
+          64
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002695024759189951
+          }
+        ],
+        "name": "cz65_64"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          65,
+          66
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003734176451319904
+          }
+        ],
+        "name": "cz65_66"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          66,
+          65
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003734176451319904
+          }
+        ],
+        "name": "cz66_65"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          66,
+          67
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0019640227492533913
+          }
+        ],
+        "name": "cz66_67"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          67,
+          66
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0019640227492533913
+          }
+        ],
+        "name": "cz67_66"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          67,
+          68
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0026761223269321788
+          }
+        ],
+        "name": "cz67_68"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          67,
+          74
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0021786046740083775
+          }
+        ],
+        "name": "cz67_74"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          68,
+          67
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0026761223269321788
+          }
+        ],
+        "name": "cz68_67"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          68,
+          69
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00246366250049318
+          }
+        ],
+        "name": "cz68_69"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          69,
+          56
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0038357128487368497
+          }
+        ],
+        "name": "cz69_56"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          69,
+          68
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00246366250049318
+          }
+        ],
+        "name": "cz69_68"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          69,
+          70
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003035248832002818
+          }
+        ],
+        "name": "cz69_70"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          70,
+          69
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003035248832002818
+          }
+        ],
+        "name": "cz70_69"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          70,
+          71
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0027401411293805633
+          }
+        ],
+        "name": "cz70_71"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          71,
+          70
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0027401411293805633
+          }
+        ],
+        "name": "cz71_70"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          71,
+          75
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0019474389689898564
+          }
+        ],
+        "name": "cz71_75"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          72,
+          59
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.005458933961344115
+          }
+        ],
+        "name": "cz72_59"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          72,
+          78
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0030003838765114144
+          }
+        ],
+        "name": "cz72_78"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          73,
+          63
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0027508238725059975
+          }
+        ],
+        "name": "cz73_63"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          73,
+          82
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0026299090335919206
+          }
+        ],
+        "name": "cz73_82"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          74,
+          67
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0021786046740083775
+          }
+        ],
+        "name": "cz74_67"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          74,
+          86
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0024300468940550712
+          }
+        ],
+        "name": "cz74_86"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          75,
+          71
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0019474389689898564
+          }
+        ],
+        "name": "cz75_71"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          75,
+          90
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0015290256351040143
+          }
+        ],
+        "name": "cz75_90"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          76,
+          77
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0021251318546781917
+          }
+        ],
+        "name": "cz76_77"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          76,
+          91
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00725724740240466
+          }
+        ],
+        "name": "cz76_91"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          77,
+          76
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0021251318546781917
+          }
+        ],
+        "name": "cz77_76"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          77,
+          78
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0019094502033954464
+          }
+        ],
+        "name": "cz77_78"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          78,
+          72
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0030003838765114144
+          }
+        ],
+        "name": "cz78_72"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          78,
+          77
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0019094502033954464
+          }
+        ],
+        "name": "cz78_77"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          78,
+          79
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.01178459985396288
+          }
+        ],
+        "name": "cz78_79"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          79,
+          78
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.01178459985396288
+          }
+        ],
+        "name": "cz79_78"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          79,
+          80
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.01159107925658659
+          }
+        ],
+        "name": "cz79_80"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          80,
+          79
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.01159107925658659
+          }
+        ],
+        "name": "cz80_79"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          80,
+          81
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002620791417849766
+          }
+        ],
+        "name": "cz80_81"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          80,
+          92
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0018902751712995547
+          }
+        ],
+        "name": "cz80_92"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          81,
+          80
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002620791417849766
+          }
+        ],
+        "name": "cz81_80"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          81,
+          82
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0023306950397069814
+          }
+        ],
+        "name": "cz81_82"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          82,
+          73
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0026299090335919206
+          }
+        ],
+        "name": "cz82_73"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          82,
+          81
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0023306950397069814
+          }
+        ],
+        "name": "cz82_81"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          82,
+          83
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0021889481283366707
+          }
+        ],
+        "name": "cz82_83"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          83,
+          82
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0021889481283366707
+          }
+        ],
+        "name": "cz83_82"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          83,
+          84
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0025567051797972806
+          }
+        ],
+        "name": "cz83_84"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          84,
+          83
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0025567051797972806
+          }
+        ],
+        "name": "cz84_83"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          84,
+          85
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 1.0
+          }
+        ],
+        "name": "cz84_85"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          84,
+          93
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.004885438904255884
+          }
+        ],
+        "name": "cz84_93"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          85,
+          84
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 1.0
+          }
+        ],
+        "name": "cz85_84"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          85,
+          86
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.033787286634667124
+          }
+        ],
+        "name": "cz85_86"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          86,
+          74
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0024300468940550712
+          }
+        ],
+        "name": "cz86_74"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          86,
+          85
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.033787286634667124
+          }
+        ],
+        "name": "cz86_85"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          86,
+          87
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001588631018716924
+          }
+        ],
+        "name": "cz86_87"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          87,
+          86
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001588631018716924
+          }
+        ],
+        "name": "cz87_86"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          87,
+          88
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0013289268762973205
+          }
+        ],
+        "name": "cz87_88"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          88,
+          87
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0013289268762973205
+          }
+        ],
+        "name": "cz88_87"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          88,
+          89
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0027228661056276637
+          }
+        ],
+        "name": "cz88_89"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          88,
+          94
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002203643081929052
+          }
+        ],
+        "name": "cz88_94"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          89,
+          88
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0027228661056276637
+          }
+        ],
+        "name": "cz89_88"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          89,
+          90
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0024781350170813288
+          }
+        ],
+        "name": "cz89_90"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          90,
+          75
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0015290256351040143
+          }
+        ],
+        "name": "cz90_75"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          90,
+          89
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0024781350170813288
+          }
+        ],
+        "name": "cz90_89"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          91,
+          76
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00725724740240466
+          }
+        ],
+        "name": "cz91_76"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          91,
+          95
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002853607817812104
+          }
+        ],
+        "name": "cz91_95"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          92,
+          80
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0018902751712995547
+          }
+        ],
+        "name": "cz92_80"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          92,
+          99
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0023735947352915565
+          }
+        ],
+        "name": "cz92_99"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          93,
+          84
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.004885438904255884
+          }
+        ],
+        "name": "cz93_84"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          93,
+          103
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0025617229853035495
+          }
+        ],
+        "name": "cz93_103"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          94,
+          88
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002203643081929052
+          }
+        ],
+        "name": "cz94_88"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          94,
+          107
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0024936473238548473
+          }
+        ],
+        "name": "cz94_107"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          95,
+          91
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002853607817812104
+          }
+        ],
+        "name": "cz95_91"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          95,
+          96
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002895020733907988
+          }
+        ],
+        "name": "cz95_96"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          96,
+          95
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002895020733907988
+          }
+        ],
+        "name": "cz96_95"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          96,
+          97
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003412099999167917
+          }
+        ],
+        "name": "cz96_97"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          97,
+          96
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003412099999167917
+          }
+        ],
+        "name": "cz97_96"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          97,
+          98
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0013301139819428542
+          }
+        ],
+        "name": "cz97_98"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          97,
+          110
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001704808786341605
+          }
+        ],
+        "name": "cz97_110"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          98,
+          97
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0013301139819428542
+          }
+        ],
+        "name": "cz98_97"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          98,
+          99
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0017715076463317159
+          }
+        ],
+        "name": "cz98_99"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          99,
+          92
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0023735947352915565
+          }
+        ],
+        "name": "cz99_92"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          99,
+          98
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0017715076463317159
+          }
+        ],
+        "name": "cz99_98"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          99,
+          100
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001988186084815907
+          }
+        ],
+        "name": "cz99_100"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          100,
+          99
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001988186084815907
+          }
+        ],
+        "name": "cz100_99"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          100,
+          101
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002608502688419556
+          }
+        ],
+        "name": "cz100_101"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          101,
+          100
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002608502688419556
+          }
+        ],
+        "name": "cz101_100"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          101,
+          102
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002139551051686339
+          }
+        ],
+        "name": "cz101_102"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          101,
+          111
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0022468777079443503
+          }
+        ],
+        "name": "cz101_111"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          102,
+          101
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002139551051686339
+          }
+        ],
+        "name": "cz102_101"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          102,
+          103
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0015526097085960533
+          }
+        ],
+        "name": "cz102_103"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          103,
+          93
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0025617229853035495
+          }
+        ],
+        "name": "cz103_93"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          103,
+          102
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0015526097085960533
+          }
+        ],
+        "name": "cz103_102"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          103,
+          104
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.008446098462454116
+          }
+        ],
+        "name": "cz103_104"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          104,
+          103
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.008446098462454116
+          }
+        ],
+        "name": "cz104_103"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          104,
+          105
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.005061068274231667
+          }
+        ],
+        "name": "cz104_105"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          105,
+          104
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.005061068274231667
+          }
+        ],
+        "name": "cz105_104"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          105,
+          106
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0058593330759032225
+          }
+        ],
+        "name": "cz105_106"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          105,
+          112
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0028126915814224163
+          }
+        ],
+        "name": "cz105_112"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          106,
+          105
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0058593330759032225
+          }
+        ],
+        "name": "cz106_105"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          106,
+          107
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.005219144685235877
+          }
+        ],
+        "name": "cz106_107"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          107,
+          94
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0024936473238548473
+          }
+        ],
+        "name": "cz107_94"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          107,
+          106
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.005219144685235877
+          }
+        ],
+        "name": "cz107_106"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          107,
+          108
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00258088449412619
+          }
+        ],
+        "name": "cz107_108"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          108,
+          107
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00258088449412619
+          }
+        ],
+        "name": "cz108_107"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          108,
+          109
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0020105464380297533
+          }
+        ],
+        "name": "cz108_109"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          109,
+          108
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0020105464380297533
+          }
+        ],
+        "name": "cz109_108"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          109,
+          113
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003717302283740259
+          }
+        ],
+        "name": "cz109_113"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          110,
+          97
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001704808786341605
+          }
+        ],
+        "name": "cz110_97"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          110,
+          116
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0018085880124388276
+          }
+        ],
+        "name": "cz110_116"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          111,
+          101
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0022468777079443503
+          }
+        ],
+        "name": "cz111_101"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          111,
+          120
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003457220768510405
+          }
+        ],
+        "name": "cz111_120"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          112,
+          105
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0028126915814224163
+          }
+        ],
+        "name": "cz112_105"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          112,
+          124
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0013041704872008564
+          }
+        ],
+        "name": "cz112_124"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          113,
+          109
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003717302283740259
+          }
+        ],
+        "name": "cz113_109"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          113,
+          128
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0022132899845710152
+          }
+        ],
+        "name": "cz113_128"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          114,
+          115
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0032719986141752644
+          }
+        ],
+        "name": "cz114_115"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          114,
+          129
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0040969355637415494
+          }
+        ],
+        "name": "cz114_129"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          115,
+          114
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0032719986141752644
+          }
+        ],
+        "name": "cz115_114"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          115,
+          116
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003350586114971854
+          }
+        ],
+        "name": "cz115_116"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          116,
+          110
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0018085880124388276
+          }
+        ],
+        "name": "cz116_110"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          116,
+          115
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003350586114971854
+          }
+        ],
+        "name": "cz116_115"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          116,
+          117
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.040315184504947726
+          }
+        ],
+        "name": "cz116_117"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          117,
+          116
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.040315184504947726
+          }
+        ],
+        "name": "cz117_116"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          117,
+          118
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.018274337270065888
+          }
+        ],
+        "name": "cz117_118"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          118,
+          117
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.018274337270065888
+          }
+        ],
+        "name": "cz118_117"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          118,
+          119
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0022921199225998112
+          }
+        ],
+        "name": "cz118_119"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          118,
+          130
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001755062534344709
+          }
+        ],
+        "name": "cz118_130"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          119,
+          118
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0022921199225998112
+          }
+        ],
+        "name": "cz119_118"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          119,
+          120
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00201144663912467
+          }
+        ],
+        "name": "cz119_120"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          120,
+          111
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.003457220768510405
+          }
+        ],
+        "name": "cz120_111"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          120,
+          119
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00201144663912467
+          }
+        ],
+        "name": "cz120_119"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          120,
+          121
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002027341551903983
+          }
+        ],
+        "name": "cz120_121"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          121,
+          120
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002027341551903983
+          }
+        ],
+        "name": "cz121_120"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          121,
+          122
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002132358200669454
+          }
+        ],
+        "name": "cz121_122"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          122,
+          121
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002132358200669454
+          }
+        ],
+        "name": "cz122_121"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          122,
+          123
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.007676472909008664
+          }
+        ],
+        "name": "cz122_123"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          122,
+          131
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.005778346640094328
+          }
+        ],
+        "name": "cz122_131"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          123,
+          122
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.007676472909008664
+          }
+        ],
+        "name": "cz123_122"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          123,
+          124
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.014285259100173725
+          }
+        ],
+        "name": "cz123_124"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          124,
+          112
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0013041704872008564
+          }
+        ],
+        "name": "cz124_112"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          124,
+          123
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.014285259100173725
+          }
+        ],
+        "name": "cz124_123"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          124,
+          125
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002067425219114488
+          }
+        ],
+        "name": "cz124_125"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          125,
+          124
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.002067425219114488
+          }
+        ],
+        "name": "cz125_124"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          125,
+          126
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0022735791977109288
+          }
+        ],
+        "name": "cz125_126"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          126,
+          125
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0022735791977109288
+          }
+        ],
+        "name": "cz126_125"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          126,
+          127
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0038474428260688864
+          }
+        ],
+        "name": "cz126_127"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          126,
+          132
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0014224217068877498
+          }
+        ],
+        "name": "cz126_132"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          127,
+          126
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0038474428260688864
+          }
+        ],
+        "name": "cz127_126"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          127,
+          128
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0048410510778106874
+          }
+        ],
+        "name": "cz127_128"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          128,
+          113
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0022132899845710152
+          }
+        ],
+        "name": "cz128_113"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          128,
+          127
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0048410510778106874
+          }
+        ],
+        "name": "cz128_127"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          129,
+          114
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0040969355637415494
+          }
+        ],
+        "name": "cz129_114"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          130,
+          118
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001755062534344709
+          }
+        ],
+        "name": "cz130_118"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          131,
+          122
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.005778346640094328
+          }
+        ],
+        "name": "cz131_122"
+      },
+      {
+        "gate": "cz",
+        "qubits": [
+          132,
+          126
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0014224217068877498
+          }
+        ],
+        "name": "cz132_126"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          0
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0002755220917806244
+          }
+        ],
+        "name": "sx0"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          1
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00022036917060365335
+          }
+        ],
+        "name": "sx1"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          2
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00029029657489049973
+          }
+        ],
+        "name": "sx2"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          3
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00017167451135650358
+          }
+        ],
+        "name": "sx3"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          4
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00029371530314397526
+          }
+        ],
+        "name": "sx4"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          5
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00017664081390520773
+          }
+        ],
+        "name": "sx5"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          6
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0003476286603214796
+          }
+        ],
+        "name": "sx6"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          7
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0003854823891449924
+          }
+        ],
+        "name": "sx7"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          8
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0005480718629340965
+          }
+        ],
+        "name": "sx8"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          9
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0003256730783634015
+          }
+        ],
+        "name": "sx9"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          10
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00011487877344702583
+          }
+        ],
+        "name": "sx10"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          11
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00019183644591358137
+          }
+        ],
+        "name": "sx11"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          12
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00014509490673477102
+          }
+        ],
+        "name": "sx12"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          13
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0003339157088161453
+          }
+        ],
+        "name": "sx13"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          14
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.000272297510733737
+          }
+        ],
+        "name": "sx14"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          15
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0006461448470682795
+          }
+        ],
+        "name": "sx15"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          16
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00019694317707412158
+          }
+        ],
+        "name": "sx16"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          17
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.000449573240609772
+          }
+        ],
+        "name": "sx17"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          18
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0001881397113180439
+          }
+        ],
+        "name": "sx18"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          19
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001090658796500565
+          }
+        ],
+        "name": "sx19"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          20
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00023955651538363956
+          }
+        ],
+        "name": "sx20"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          21
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0006496654431171512
+          }
+        ],
+        "name": "sx21"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          22
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00044324864634358676
+          }
+        ],
+        "name": "sx22"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          23
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00491437887682136
+          }
+        ],
+        "name": "sx23"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          24
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00043792463086141206
+          }
+        ],
+        "name": "sx24"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          25
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00010724618285608591
+          }
+        ],
+        "name": "sx25"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          26
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00012369052720256877
+          }
+        ],
+        "name": "sx26"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          27
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00021547365533935894
+          }
+        ],
+        "name": "sx27"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          28
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00028837469328569674
+          }
+        ],
+        "name": "sx28"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          29
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.000514761488013567
+          }
+        ],
+        "name": "sx29"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          30
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00024349233376571233
+          }
+        ],
+        "name": "sx30"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          31
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.000248197618043844
+          }
+        ],
+        "name": "sx31"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          32
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00021230831667869398
+          }
+        ],
+        "name": "sx32"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          33
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0003630964912892923
+          }
+        ],
+        "name": "sx33"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          34
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00019866399639401078
+          }
+        ],
+        "name": "sx34"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          35
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0005161138824874135
+          }
+        ],
+        "name": "sx35"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          36
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0007977580935505627
+          }
+        ],
+        "name": "sx36"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          37
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00035660796168240547
+          }
+        ],
+        "name": "sx37"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          38
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.000406533177193871
+          }
+        ],
+        "name": "sx38"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          39
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00023940531060304037
+          }
+        ],
+        "name": "sx39"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          40
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0003047364570732021
+          }
+        ],
+        "name": "sx40"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          41
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.055320009345657374
+          }
+        ],
+        "name": "sx41"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          42
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00034814581519241423
+          }
+        ],
+        "name": "sx42"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          43
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0007275876652755093
+          }
+        ],
+        "name": "sx43"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          44
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0001643583883703018
+          }
+        ],
+        "name": "sx44"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          45
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00037920718930669077
+          }
+        ],
+        "name": "sx45"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          46
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00029555017787623235
+          }
+        ],
+        "name": "sx46"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          47
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0004769925497874978
+          }
+        ],
+        "name": "sx47"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          48
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0002792366251931676
+          }
+        ],
+        "name": "sx48"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          49
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00020945242332804317
+          }
+        ],
+        "name": "sx49"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          50
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0011175491374020108
+          }
+        ],
+        "name": "sx50"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          51
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0001470738043811087
+          }
+        ],
+        "name": "sx51"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          52
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00014530021848913928
+          }
+        ],
+        "name": "sx52"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          53
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 1.0
+          }
+        ],
+        "name": "sx53"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          54
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00042825954617210066
+          }
+        ],
+        "name": "sx54"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          55
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00017652202846453555
+          }
+        ],
+        "name": "sx55"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          56
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00014401908614716482
+          }
+        ],
+        "name": "sx56"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          57
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0003129956047103544
+          }
+        ],
+        "name": "sx57"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          58
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0003428105609114901
+          }
+        ],
+        "name": "sx58"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          59
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0002561488902750069
+          }
+        ],
+        "name": "sx59"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          60
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00021446529349532806
+          }
+        ],
+        "name": "sx60"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          61
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00021262136611080356
+          }
+        ],
+        "name": "sx61"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          62
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00030467476662809066
+          }
+        ],
+        "name": "sx62"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          63
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0005976664557156861
+          }
+        ],
+        "name": "sx63"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          64
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00022508094702326542
+          }
+        ],
+        "name": "sx64"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          65
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0006837719281999953
+          }
+        ],
+        "name": "sx65"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          66
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0003643258796069931
+          }
+        ],
+        "name": "sx66"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          67
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0007286758729275442
+          }
+        ],
+        "name": "sx67"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          68
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00030460728715228305
+          }
+        ],
+        "name": "sx68"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          69
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0002528369831058689
+          }
+        ],
+        "name": "sx69"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          70
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0004817166481043395
+          }
+        ],
+        "name": "sx70"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          71
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0003285716224055035
+          }
+        ],
+        "name": "sx71"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          72
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00024771717781021577
+          }
+        ],
+        "name": "sx72"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          73
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0008182382557931723
+          }
+        ],
+        "name": "sx73"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          74
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0004284751562678749
+          }
+        ],
+        "name": "sx74"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          75
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0006703830769178912
+          }
+        ],
+        "name": "sx75"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          76
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0002969141116194129
+          }
+        ],
+        "name": "sx76"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          77
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0002714353721029378
+          }
+        ],
+        "name": "sx77"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          78
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0007399556786540528
+          }
+        ],
+        "name": "sx78"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          79
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0020442471415814813
+          }
+        ],
+        "name": "sx79"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          80
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00020229787196099537
+          }
+        ],
+        "name": "sx80"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          81
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00037159050301709487
+          }
+        ],
+        "name": "sx81"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          82
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0003921504951883472
+          }
+        ],
+        "name": "sx82"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          83
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0004114776516936248
+          }
+        ],
+        "name": "sx83"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          84
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0004357340569576365
+          }
+        ],
+        "name": "sx84"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          85
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.004050241574159824
+          }
+        ],
+        "name": "sx85"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          86
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00014022319278700904
+          }
+        ],
+        "name": "sx86"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          87
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00019047922680992524
+          }
+        ],
+        "name": "sx87"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          88
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00021360251200678836
+          }
+        ],
+        "name": "sx88"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          89
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0003350151236870646
+          }
+        ],
+        "name": "sx89"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          90
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0002956145797328268
+          }
+        ],
+        "name": "sx90"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          91
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0003619480359260538
+          }
+        ],
+        "name": "sx91"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          92
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0008564181259652885
+          }
+        ],
+        "name": "sx92"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          93
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0001143099498421596
+          }
+        ],
+        "name": "sx93"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          94
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00028916011927469435
+          }
+        ],
+        "name": "sx94"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          95
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00039499431776769385
+          }
+        ],
+        "name": "sx95"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          96
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0003465103642517707
+          }
+        ],
+        "name": "sx96"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          97
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0005098889330212041
+          }
+        ],
+        "name": "sx97"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          98
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0002488374963076462
+          }
+        ],
+        "name": "sx98"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          99
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00020851344690478492
+          }
+        ],
+        "name": "sx99"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          100
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00020399756864781718
+          }
+        ],
+        "name": "sx100"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          101
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0001755578335617514
+          }
+        ],
+        "name": "sx101"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          102
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00048310074830602015
+          }
+        ],
+        "name": "sx102"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          103
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0001569268536380571
+          }
+        ],
+        "name": "sx103"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          104
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0014681193992931703
+          }
+        ],
+        "name": "sx104"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          105
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0009500563841718292
+          }
+        ],
+        "name": "sx105"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          106
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001140930029733484
+          }
+        ],
+        "name": "sx106"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          107
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00024554632307407874
+          }
+        ],
+        "name": "sx107"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          108
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00025008563472807787
+          }
+        ],
+        "name": "sx108"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          109
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00032391905683687986
+          }
+        ],
+        "name": "sx109"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          110
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00012267952685149588
+          }
+        ],
+        "name": "sx110"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          111
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00023955982625900086
+          }
+        ],
+        "name": "sx111"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          112
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0002853214332290358
+          }
+        ],
+        "name": "sx112"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          113
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.001354147437682048
+          }
+        ],
+        "name": "sx113"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          114
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00020715367102863314
+          }
+        ],
+        "name": "sx114"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          115
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0008250447435538485
+          }
+        ],
+        "name": "sx115"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          116
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0003191000966640502
+          }
+        ],
+        "name": "sx116"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          117
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0003643135787153116
+          }
+        ],
+        "name": "sx117"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          118
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0003662069066108781
+          }
+        ],
+        "name": "sx118"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          119
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00024806899586004
+          }
+        ],
+        "name": "sx119"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          120
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.000277424835827744
+          }
+        ],
+        "name": "sx120"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          121
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00018984315538394088
+          }
+        ],
+        "name": "sx121"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          122
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00028270295182336233
+          }
+        ],
+        "name": "sx122"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          123
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0014961467337016397
+          }
+        ],
+        "name": "sx123"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          124
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00022074191303327086
+          }
+        ],
+        "name": "sx124"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          125
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00024769109477420245
+          }
+        ],
+        "name": "sx125"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          126
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00023596415905004944
+          }
+        ],
+        "name": "sx126"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          127
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0006535295213608706
+          }
+        ],
+        "name": "sx127"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          128
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00019486458460122477
+          }
+        ],
+        "name": "sx128"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          129
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.0014939958904524801
+          }
+        ],
+        "name": "sx129"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          130
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00042714418016151663
+          }
+        ],
+        "name": "sx130"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          131
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.000587077436578531
+          }
+        ],
+        "name": "sx131"
+      },
+      {
+        "gate": "sx",
+        "qubits": [
+          132
+        ],
+        "parameters": [
+          {
+            "date": "2026-02-26 19:19:50+00:00",
+            "name": "gate_error",
+            "unit": "",
+            "value": 0.00027607015363972123
+          }
+        ],
+        "name": "sx132"
+      }
+    ],
+    "general": [],
+    "source": "huggingface_phanerozoic_qiskit_calibration_drift"
+  },
+  "calibration_timestamp": "2026-02-26 19:46:00+00:00",
+  "calibration_delta_min": 3971.1,
+  "source": "huggingface_phanerozoic_qiskit_calibration_drift",
+  "note": "Calibration from HuggingFace dataset 'phanerozoic/qiskit-calibration-drift'. Snapshot: 2026-02-26 19:46:00+00:00 (\u0394=3971.1 min from job running time)."
+}

@@ -1,0 +1,9 @@
+{
+  "job_id": "d6i253648nic73anmgi0",
+  "label": "G-652-D_step02",
+  "subfolder": "Cat-C0",
+  "created_at": "2026-03-01 11:27:08.620132+00:00",
+  "result": {
+    "raw": "PrimitiveResult([SamplerPubResult(data=DataBin(c=BitArray(<shape=(), num_shots=10000, num_bits=2>)), metadata={'circuit_metadata': {}})], metadata={'execution': {'execution_spans': ExecutionSpans([DoubleSliceSpan(<start='2026-03-01 11:27:19', stop='2026-03-01 11:27:22', size=10000>)])}, 'version': 2})"
+  }
+}

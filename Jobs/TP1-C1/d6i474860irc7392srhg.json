@@ -1,0 +1,9 @@
+{
+  "job_id": "d6i474860irc7392srhg",
+  "label": "monolithic",
+  "subfolder": "TP1-C1",
+  "created_at": "2026-03-01 13:48:01.324893+00:00",
+  "result": {
+    "raw": "PrimitiveResult([SamplerPubResult(data=DataBin(c5=BitArray(<shape=(), num_shots=10000, num_bits=2>)), metadata={'circuit_metadata': {}})], metadata={'execution': {'execution_spans': ExecutionSpans([DoubleSliceSpan(<start='2026-03-01 13:48:05', stop='2026-03-01 13:48:08', size=10000>)])}, 'version': 2})"
+  }
+}
