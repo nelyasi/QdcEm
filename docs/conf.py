@@ -12,18 +12,12 @@ templates_path = ['_templates']
 exclude_patterns = ['_build']
 
 html_theme = 'sphinx_rtd_theme'
-html_static_path = ['_static']
+html_static_path = ["_static"]
 
-# Logo shown in the top-left sidebar
-html_logo = "_static/demo.png"
+html_logo = "_static/qdcem_logo.png"
+html_favicon = "_static/qdcem_logo.png"
 
-# Icon shown in the browser tab / next to the URL
-html_favicon = "_static/demo.png"
 
-html_theme_options = {
-    "logo_only": True,
-    "display_version": True,
-}
 
 html_theme_options = {
     'logo_only': False,
@@ -35,4 +29,5 @@ html_theme_options = {
     'navigation_depth': 3,
     'includehidden': True,
     'titles_only': False,
-}
+    "logo_only": True,
+    "display_version": True}
