@@ -49,7 +49,7 @@ QdcEm includes hardware-compatible implementations for:
    :widths: 20 80
 
    * - **GitHub**
-     - https://github.com/<your-org>/QdcEm
+     - https://github.com/nelyasi/QdcEm
    * - **arXiv**
      - https://arxiv.org/abs/2509.04029
    * - **License**
