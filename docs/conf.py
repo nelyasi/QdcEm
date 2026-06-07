@@ -2,8 +2,8 @@ import os
 import sys
 
 project = 'QdcEm'
-copyright = '2025, Seyed Navid Elyasi, Paolo Monti, Jun Li, Rui Lin'
-author = 'Seyed Navid Elyasi, Paolo Monti, Jun Li, Rui Lin'
+copyright = '2025, Seyed Navid Elyasi'
+author = 'Seyed Navid Elyasi'
 release = '1.0'
 
 extensions = []
