@@ -30,6 +30,11 @@ tunable, physically motivated parameters. The result is a
 self-contained emulation environment for distributed quantum computing
 that runs entirely within a single chip.
 
+.. image:: _static/demo.png
+   :alt: QdcEm demo
+   :align: center
+   :width: 700px
+
 QdcEm includes hardware-compatible implementations for:
 
 - Remote gate protocols (Cat-State Communication and Teleportation)
