@@ -14,6 +14,17 @@ exclude_patterns = ['_build']
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
+# Logo shown in the top-left sidebar
+html_logo = "_static/demo.png"
+
+# Icon shown in the browser tab / next to the URL
+html_favicon = "_static/demo.png"
+
+html_theme_options = {
+    "logo_only": True,
+    "display_version": True,
+}
+
 html_theme_options = {
     'logo_only': False,
     'display_version': True,
