@@ -1,125 +1,195 @@
-![BatSim Package Overview](postercode.png)
+<div align="center">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](./LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0-brightgreen.svg)]()
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0f62fe&height=220&section=header&text=QdcEm&fontSize=72&fontColor=ffffff&fontAlignY=38&fontAlign=50&desc=Quantum%20Data%20Centers%20on%20Single-Chip%20Quantum%20Computers&descAlignY=60&descSize=16&descAlign=50&animation=fadeIn" width="100%"/>
 
-# Quantum Data Centers on Single-Chip Quantum Computers (QdcEm)
+<br/>
 
-## Overview
+<img src="https://img.shields.io/badge/License-MIT-42be65?style=flat-square&labelColor=161616"/>
+<img src="https://img.shields.io/badge/version-1.0-42be65?style=flat-square&labelColor=161616"/>
+<img src="https://img.shields.io/badge/arXiv-2509.04029-da1e28?style=flat-square&labelColor=161616"/>
+<img src="https://img.shields.io/badge/Python-3.9%2B-0f62fe?style=flat-square&labelColor=161616"/>
+<img src="https://img.shields.io/badge/Qiskit-2.3.0-8a3ffc?style=flat-square&labelColor=161616"/>
 
-This repository contains the code, data, and analysis scripts supporting the paper:
+<br/><br/>
 
-> **"Emulation of Quantum Data Centers on Digital Quantum Computers"**  
-> *Seyed Navid Elyasi, Paolo Monti. Jun Li, Rui Lin*  
+> **Emulation of Quantum Data Centers on Digital Quantum Computers**
+> *Seyed Navid Elyasi · Paolo Monti · Jun Li · Rui Lin — Chalmers University of Technology*
 
-In this work, we present a **hardware-compatible framework** for emulating **Quantum Data Centers (QDCs)** entirely within a single superconducting quantum processor.  
-Our approach partitions the chip’s coupling map into **virtual Quantum Processing Units (QPUs)** and uses an **experimentally grounded Collisional Model (CM)** to emulate noisy quantum communication channels such as optical fibers and transducers.  
+<br/>
 
-The repository provides:
-- **Implementation of Remote Gates (RGs)** including CNOT, Controlled-Phase, CZ, and Controlled-U gates over virtual QPUs.
-- **Noise modeling** via CM to emulate both transduction and fiber-induced decoherence.
-- **Demonstrations of distributed quantum algorithms** such as Grover’s Search and the Quantum Fourier Transform (QFT).
-- **All plotting scripts** to recreate figures from the paper.
+</div>
 
 ---
 
-## Package Structure
+## `01` &nbsp; Overview
 
-The `QDCEm` package consists of the following core modules:
+This repository contains the code, data, and analysis scripts supporting research on **hardware-compatible emulation of Quantum Data Centers (QDCs)** within a single superconducting quantum processor.
 
-1. **Remote Gates**
-   - **Cat-State Communication (Cat-Com)**  
-     - Remote CNOT (CX)  
-     - Remote Controlled-Phase (CPhase)
-   - **Teleportation Protocols**  
-     - TP1  
-     - TP2  
-     - TP-Safe  
-   These protocols are implemented with tunable CM-based noise to study fidelity degradation under realistic communication conditions.
+The approach partitions a chip's coupling map into **virtual Quantum Processing Units (QPUs)** and uses an experimentally grounded **Collisional Model (CM)** to emulate noisy quantum communication channels — optical fibers and microwave-to-optical transducers — all on a single device.
 
-2. **Examples**
-   - Remote Gate execution workflows and benchmark cases demonstrating the interaction of communication and processing qubits across virtual QPUs.
-
-3. **Algorithms**
-   - **Entanglement Generation**  
-     Cross-QPU Bell state creation using noisy RGs.
-   - **Grover’s Search**  
-     Distributed 2-qubit Grover’s algorithm executed across virtual QPUs, validated against experimental ion-trap results.
-   - **Quantum Fourier Transform (QFT)**  
-     5-qubit QFT partitioned across QPUs, with fidelity analysis via quantum state tomography.
-
----
-
-## Usage 
-
-```bash
-from qdcem import remote_cx
-
-remote_cx(qc, control, target, CommA, CommB, ENA, ENB, creg, creg_index,
-          kappa_Fiber=0.05, Steps=3, kappa_Transductor=0.1)
 ```
-control and target are indices of processing qubits.
-
-CommA and CommB are communication qubits in QPU A and QPU B.
-
-ENA, ENB are environment qubits recycled for CM noise injection.
-
-## Method Summary
-
-The CM-based noise model used here follows the interaction Hamiltonian:
-
-$$
-\hat{H} = \kappa \left( \sigma^- \otimes \sigma^+ + \sigma^+ \otimes \sigma^- \right)
-$$
-
-- **$\kappa_{\text{Transducer}}$** models conversion inefficiencies between microwave and optical domains.  
-- **$\kappa_{\text{Fiber}}$** models optical attenuation over discrete fiber segments.
-
-Mid-circuit measurement and feed-forward logic enable **non-local operations** between processing qubits located in different virtual QPUs — matching the Cat-Comm protocol outlined in Section III-A of the paper.
-
----
-
-## Dependencies & Versions
-
-To use this repository, you need to download and install the following required packages (**as of February 27, 2026**):
-
-| Package        | Version     |
-|----------------|-------------|
-| **qiskit**       | `2.3.0`      |
-| **qutip**        | `5.2.3`      |
-| **matplotlib**   | `3.10.8`     |
-| **numpy**        | `2.4.2`      |
-
-### Installation
-```bash
-**pip install qiskit==0.52.0 qutip==5.0.1 matplotlib==3.9.1 numpy==1.27.0**
+ ┌─────────────────────────────────────────────────────────────┐
+ │                    Single Quantum Chip                      │
+ │                                                             │
+ │   ┌──────────────┐    Fiber + Transducer    ┌─────────────┐ │
+ │   │    QPU A     │  ══════════════════════  │    QPU B    │ │
+ │   │  P  P  C  E  │  κ_Fiber  κ_Transducer   │  E  C  P  P │ │
+ │   └──────────────┘                          └─────────────┘ │
+ │                                                             │
+ │   P = Processing qubit   C = Communication qubit            │
+ │   E = Environment qubit (CM noise injection)                │
+ └─────────────────────────────────────────────────────────────┘
 ```
 
+---
 
-## Toturial on How to Use this Repository(Video Format) 
-[![Watch the video](https://img.youtube.com/vi/your-video-id/0.jpg)](https://www.youtube.com/watch?v=your-video-id)
+## `02` &nbsp; Key Contributions
+
+| &nbsp; | Contribution | Description |
+|:---:|---|---|
+| ⚙ | **Remote Gate Implementation** | CNOT, Controlled-Phase, CZ, and Controlled-U gates across virtual QPUs |
+| ∿ | **Collisional Model Noise** | Experimentally grounded noise for fiber attenuation and transducer inefficiency |
+| ◈ | **Distributed Algorithms** | Grover's Search and QFT demonstrated across partitioned QPUs |
+| ⊞ | **Full Reproducibility** | All plotting scripts to recreate every figure from the paper |
 
 ---
 
-## Citation
+## `03` &nbsp; Package Structure
 
-If you use this work in your research, please cite our paper:
+```
+QdcEm/
+│
+├── remote_gates/
+│   ├── cat_com/
+│   │   ├── remote_cx.py          # Remote CNOT via Cat-State Communication
+│   │   └── remote_cphase.py      # Remote Controlled-Phase
+│   └── teleportation/
+│       ├── tp1.py                # Teleportation Protocol 1
+│       ├── tp2.py                # Teleportation Protocol 2
+│       └── tp_safe.py            # TP-Safe (measurement-error resilient)
+│
+├── noise/
+│   └── collisional_model.py      # CM Hamiltonian: H = κ(σ⁻⊗σ⁺ + σ⁺⊗σ⁻)
+│
+├── algorithms/
+│   ├── entanglement.py           # Cross-QPU Bell state generation
+│   ├── grover.py                 # Distributed 2-qubit Grover's search
+│   └── qft.py                   # 5-qubit QFT across virtual QPUs
+│
+└── examples/
+    └── remote_gate_demo.py       # Workflow demonstration
+```
 
-**A Framework for Quantum Data Center Emulation Using Digital Quantum Computers**  
-S. N. Elyasi, P. Monti, J. Li, R. Lin  
-_arXiv preprint arXiv:2509.04029 (2025)_
+---
 
-### 🔹 BibTeX
+## `04` &nbsp; Noise Model
 
-Add the following entry to your `.bib` file:
+$$\hat{H} = \kappa \left( \sigma^- \otimes \sigma^+ + \sigma^+ \otimes \sigma^- \right)$$
+
+| Parameter | Symbol | Description |
+|-----------|--------|-------------|
+| Transducer coupling | `κ_Transducer` | Microwave-to-optical conversion inefficiency |
+| Fiber coupling | `κ_Fiber` | Optical attenuation over discrete fiber segments |
+| CM steps | `N_steps` | Number of discrete environment interactions |
+
+---
+
+## `05` &nbsp; Installation
+
+```bash
+pip install qiskit==2.3.0 qutip==5.2.3 matplotlib==3.10.8 numpy==2.4.2
+```
+
+---
+
+## `06` &nbsp; Quick Start
+
+```python
+from QdcEm import remote_cx
+
+remote_cx(
+    qc,
+    control,          # index of control processing qubit
+    target,           # index of target processing qubit
+    CommA,            # communication qubit in QPU A
+    CommB,            # communication qubit in QPU B
+    ENA,              # environment qubit in QPU A (CM noise)
+    ENB,              # environment qubit in QPU B (CM noise)
+    creg,
+    creg_index,
+    kappa_Fiber=0.05,
+    Steps=3,
+    kappa_Transductor=0.1
+)
+```
+
+```bash
+python examples/grover_demo.py        # Distributed Grover's search
+python examples/qft_demo.py           # 5-qubit distributed QFT
+python examples/remote_gate_demo.py   # Remote CNOT fidelity sweep
+```
+
+---
+
+## `07` &nbsp; Demonstrated Algorithms
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+**🔵 &nbsp; Grover's Search**
+
+Distributed 2-qubit Grover's algorithm across virtual QPUs, validated against ion-trap experimental results.
+
+</td>
+<td width="33%" valign="top">
+
+**🟣 &nbsp; Quantum Fourier Transform**
+
+5-qubit QFT partitioned across QPUs with fidelity characterization via quantum state tomography.
+
+</td>
+<td width="33%" valign="top">
+
+**🔴 &nbsp; Entanglement Generation**
+
+Cross-QPU Bell state creation using noisy remote gates over CM-modeled communication channels.
+
+</td>
+</tr>
+</table>
+
+---
+
+## `08` &nbsp; Dependencies
+
+| Package | Version | Role |
+|---------|---------|------|
+| [qiskit](https://qiskit.org/) | `2.3.0` | Circuit construction and execution |
+| [qutip](https://qutip.org/) | `5.2.3` | Collisional model simulation |
+| [matplotlib](https://matplotlib.org/) | `3.10.8` | Figure plotting |
+| [numpy](https://numpy.org/) | `2.4.2` | Numerical computation |
+
+---
+
+## `09` &nbsp; Citation
 
 ```bibtex
 @article{elyasi2025quantum,
-  title={A Framework for Quantum Data Center Emulation Using Digital Quantum Computers},
-  author={Elyasi, S. N. and Monti, P. and Li, J. and Lin, R.},
-  journal={arXiv preprint arXiv:2509.04029},
-  year={2025},
-  url={https://arxiv.org/abs/2509.04029}
+  title   = {A Framework for Quantum Data Center Emulation Using Digital Quantum Computers},
+  author  = {Elyasi, S. N. and Monti, P. and Li, J. and Lin, R.},
+  journal = {arXiv preprint arXiv:2509.04029},
+  year    = {2025},
+  url     = {https://arxiv.org/abs/2509.04029}
 }
+```
 
+---
 
+<div align="center">
+
+Made at **Chalmers University of Technology**
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0f62fe&height=100&section=footer" width="100%"/>
+
+</div>
