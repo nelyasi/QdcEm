@@ -1,5 +1,9 @@
 QdcEm: Quantum Data Center Emulator
 =====================================
+.. image:: _static/demo.png
+   :alt: QdcEm demo
+   :align: center
+   :width: 500px
 
 .. image:: https://img.shields.io/badge/License-MIT-brightgreen.svg
    :target: ./LICENSE
@@ -29,11 +33,6 @@ communication channel noise — transducers and fiber segments — with
 tunable, physically motivated parameters. The result is a
 self-contained emulation environment for distributed quantum computing
 that runs entirely within a single chip.
-
-.. image:: _static/demo.png
-   :alt: QdcEm demo
-   :align: center
-   :width: 700px
 
 QdcEm includes hardware-compatible implementations for:
 
