@@ -172,7 +172,48 @@ Cross-QPU Bell state creation using noisy remote gates over CM-modeled communica
 
 ---
 
-## `09` &nbsp; Citation
+---
+
+## `09` &nbsp; Tutorials
+
+<table>
+<tr>
+<td width="50%" align="center" valign="top">
+
+### Concepts, Theory, and Paper Background
+
+<a href="https://youtu.be/hbQn5vrRxDE">
+  <img src="./Tutorial/Concepts.png" alt="Concepts, Theory, and Paper Background Tutorial" width="100%"/>
+</a>
+
+<br/>
+
+<a href="https://youtu.be/hbQn5vrRxDE">
+  Watch Tutorial
+</a>
+
+</td>
+<td width="50%" align="center" valign="top">
+
+### How to Use the Repository
+
+<a href="https://youtu.be/F_b91hB_YSM">
+  <img src="./Tutorial/Github.png" alt="How to Use the QdcEm Repository Tutorial" width="100%"/>
+</a>
+
+<br/>
+
+<a href="https://youtu.be/F_b91hB_YSM">
+  Watch Tutorial
+</a>
+
+</td>
+</tr>
+</table>
+
+--
+
+## `10` &nbsp; Citation
 
 ```bibtex
 @article{elyasi2025quantum,
