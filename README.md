@@ -12,6 +12,10 @@
 
 <br/><br/>
 
+<img src="./Pics/demo_logo.png" alt="QdcEm Demo" width="420"/>
+
+<br/><br/>
+
 > **Emulation of Quantum Data Centers on Digital Quantum Computers**
 > *Seyed Navid Elyasi · Paolo Monti · Jun Li · Rui Lin — Chalmers University of Technology*
 
