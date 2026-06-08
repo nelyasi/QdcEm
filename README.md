@@ -47,37 +47,47 @@ The approach partitions a chip's coupling map into **virtual Quantum Processing 
 
 | &nbsp; | Contribution | Description |
 |:---:|---|---|
-| ⚙ | **Remote Gate Implementation** | CNOT, Controlled-Phase, CZ, and Controlled-U gates across virtual QPUs |
+| ⚙ | **Remote Gate Implementation** | CNOT, Controlled-Phase, CZ, and Controlled-U gates across virtual QPUs via Cat-Comm and TP1 protocols |
 | ∿ | **Collisional Model Noise** | Experimentally grounded noise for fiber attenuation and transducer inefficiency |
 | ◈ | **Distributed Algorithms** | Grover's Search and QFT demonstrated across partitioned QPUs |
-| ⊞ | **Full Reproducibility** | All plotting scripts to recreate every figure from the paper |
+| ⊞ | **Full Reproducibility** | All IBM Quantum job data and plotting scripts to recreate every figure from the paper |
 
 ---
 
-## `03` &nbsp; Package Structure
+## `03` &nbsp; Repository Structure
 
 ```
 QdcEm/
 │
-├── remote_gates/
-│   ├── cat_com/
-│   │   ├── remote_cx.py          # Remote CNOT via Cat-State Communication
-│   │   └── remote_cphase.py      # Remote Controlled-Phase
-│   └── teleportation/
-│       ├── tp1.py                # Teleportation Protocol 1
-│       ├── tp2.py                # Teleportation Protocol 2
-│       └── tp_safe.py            # TP-Safe (measurement-error resilient)
+├── QdcEm/                        # Core package
+│   ├── __init__.py
+│   ├── QPU.py                    # QPU class and initial layout mapping
+│   ├── RemoteGates.py            # Remote gates: CX, CP, CZ, CU (Cat-Comm) + CX (TP1)
+│   ├── Algorithms.py             # Distributed Grover's search and 5-qubit QFT
+│   └── Representation.py        # Circuit visualization utilities
 │
-├── noise/
-│   └── collisional_model.py      # CM Hamiltonian: H = κ(σ⁻⊗σ⁺ + σ⁺⊗σ⁻)
+├── Example/
+│   ├── Example1_BellPair_Fidelity_Landscape.ipynb
+│   └── Example2_Protocol_Race_CatComm_vs_TP1.ipynb
 │
-├── algorithms/
-│   ├── entanglement.py           # Cross-QPU Bell state generation
-│   ├── grover.py                 # Distributed 2-qubit Grover's search
-│   └── qft.py                   # 5-qubit QFT across virtual QPUs
+├── Jobs/                         # IBM Quantum job results from paper experiments
+│   ├── Cat-C0/                   # Cat-Comm protocol, control qubit |0⟩
+│   ├── Cat-C1/                   # Cat-Comm protocol, control qubit |1⟩
+│   ├── TP1-C0/                   # Teleportation Protocol 1, control qubit |0⟩
+│   ├── TP1-C1/                   # Teleportation Protocol 1, control qubit |1⟩
+│   ├── Grover/                   # Distributed Grover's search jobs
+│   └── QFT/                      # Distributed QFT jobs
 │
-└── examples/
-    └── remote_gate_demo.py       # Workflow demonstration
+├── Calibration_Data/             # IBM device calibration snapshots (JSON)
+├── QubitSets/                    # Qubit selection CSVs and IBM Toronto topology map
+├── Plots/                        # Pre-generated paper figures (Fig5a–d, Fig6, Fig9)
+├── Pics/                         # Architecture diagrams and result visualizations
+├── Tutorial/                     # Tutorial thumbnails and links
+├── docs/                         # ReadTheDocs documentation source
+│
+├── Main.ipynb                    # End-to-end workflow notebook
+├── generate_plots.py             # Reproduce all paper figures from job data
+└── requirements.txt              # Python dependencies
 ```
 
 ---
@@ -86,11 +96,21 @@ QdcEm/
 
 $$\hat{H} = \kappa \left( \sigma^- \otimes \sigma^+ + \sigma^+ \otimes \sigma^- \right)$$
 
+The Collisional Model (CM) implements this interaction Hamiltonian between the flying qubit and a single environment ancilla, producing the unitary $U = \exp(-i\hat{H})$ per collision step. Environment qubits are reset between steps to enforce the Markovian (memory-less) assumption.
+
 | Parameter | Symbol | Description |
 |-----------|--------|-------------|
-| Transducer coupling | `κ_Transducer` | Microwave-to-optical conversion inefficiency |
-| Fiber coupling | `κ_Fiber` | Optical attenuation over discrete fiber segments |
-| CM steps | `N_steps` | Number of discrete environment interactions |
+| Transducer coupling | `κ_Transducer` | Microwave-to-optical conversion inefficiency (`κ_T = 0.5`) |
+| Fiber coupling | `κ_Fiber` | Optical attenuation per 10 m segment (`κ_F = √(0.01·α)`) |
+| CM steps | `Steps` | Additional fiber collision steps; total distance = `10·(1 + Steps)` m |
+
+Supported fiber types and their attenuation coefficients (dB/km):
+
+| Fiber Type | α (km⁻¹) |
+|------------|-----------|
+| G-652-D    | 0.0415    |
+| G-654-E    | 0.0392    |
+| G-655-D    | 0.0507    |
 
 ---
 
@@ -100,33 +120,89 @@ $$\hat{H} = \kappa \left( \sigma^- \otimes \sigma^+ + \sigma^+ \otimes \sigma^- 
 pip install qiskit==2.3.0 qutip==5.2.3 matplotlib==3.10.8 numpy==2.4.2
 ```
 
+Or install all dependencies at once via the provided requirements file:
+
+```bash
+pip install -r requirements.txt
+```
+
+For IBM Quantum hardware execution, also install:
+
+```bash
+pip install qiskit-ibm-runtime qiskit-aer
+```
+
 ---
 
 ## `06` &nbsp; Quick Start
 
-```python
-from QdcEm import remote_cx
+**Set up QPUs and run a remote CNOT (Cat-Comm protocol):**
 
+```python
+from qiskit.circuit import QuantumCircuit, QuantumRegister, ClassicalRegister
+from QdcEm.RemoteGates import remote_cx
+from QdcEm.QPU import Make, Get_Initial_Layout
+
+# Define QPUs: each QPU has a communication qubit, an environment qubit,
+# and one or more processing qubits
+QPU_A = Make(Comm=2, EN=3, Processing_Qubits=[0, 1])
+QPU_B = Make(Comm=4, EN=5, Processing_Qubits=[6, 7])
+
+# Build circuit
+qr = QuantumRegister(8, 'q')
+cr = ClassicalRegister(4, 'c')
+qc = QuantumCircuit(qr, cr)
+
+# Apply noisy remote CNOT across QPUs
 remote_cx(
     qc,
-    control,          # index of control processing qubit
-    target,           # index of target processing qubit
-    CommA,            # communication qubit in QPU A
-    CommB,            # communication qubit in QPU B
-    ENA,              # environment qubit in QPU A (CM noise)
-    ENB,              # environment qubit in QPU B (CM noise)
-    creg,
-    creg_index,
-    kappa_Fiber=0.05,
-    Steps=3,
-    kappa_Transductor=0.1
+    control=qr[0],           # processing qubit in QPU A
+    target=qr[6],            # processing qubit in QPU B
+    CommA=qr[2],             # communication qubit in QPU A
+    CommB=qr[4],             # communication qubit in QPU B
+    ENA=qr[3],               # environment qubit in QPU A (CM noise)
+    ENB=qr[5],               # environment qubit in QPU B (CM noise)
+    creg=cr,
+    creg_index=0,
+    kappa_Fiber=0.0198,      # G-654-E fiber: sqrt(0.01 * 0.0392)
+    Steps=3,                 # 4 × 10 m = 40 m total fiber
+    kappa_Transductor=0.5
 )
 ```
 
+**Run the distributed algorithms:**
+
+```python
+from QdcEm.Algorithms import grover_2qubit_annotated_Distributed, qft_5qubit_annotated_Distributed
+
+# Distributed 2-qubit Grover's search (mark state '11')
+qc_grover = grover_2qubit_annotated_Distributed(
+    marked_states=['11'],
+    kappa_Fiber=0.0198,
+    Steps=0,
+    kappa_Transductor=0.5
+)
+
+# Distributed 5-qubit QFT
+qc_qft = qft_5qubit_annotated_Distributed(
+    Steps=0,
+    kappa_Fiber=0.0198,
+    kappa_Transductor=0.5
+)
+```
+
+**Reproduce all paper figures from stored IBM Quantum job data:**
+
 ```bash
-python examples/grover_demo.py        # Distributed Grover's search
-python examples/qft_demo.py           # 5-qubit distributed QFT
-python examples/remote_gate_demo.py   # Remote CNOT fidelity sweep
+python generate_plots.py
+# Outputs saved to Plots/: Fig5a–d, Fig6, Fig9
+```
+
+**Explore interactive examples:**
+
+```
+Example/Example1_BellPair_Fidelity_Landscape.ipynb   # Bell pair fidelity vs. fiber length
+Example/Example2_Protocol_Race_CatComm_vs_TP1.ipynb  # Cat-Comm vs. TP1 fidelity comparison
 ```
 
 ---
@@ -139,21 +215,21 @@ python examples/remote_gate_demo.py   # Remote CNOT fidelity sweep
 
 **🔵 &nbsp; Grover's Search**
 
-Distributed 2-qubit Grover's algorithm across virtual QPUs, validated against ion-trap experimental results.
+Distributed 2-qubit Grover's algorithm across virtual QPUs, validated against ion-trap experimental results. The oracle uses a remote CZ gate; the diffusion operator uses a remote CX gate.
 
 </td>
 <td width="33%" valign="top">
 
 **🟣 &nbsp; Quantum Fourier Transform**
 
-5-qubit QFT partitioned across QPUs with fidelity characterization via quantum state tomography.
+5-qubit QFT partitioned across QPUs (QPU A: 2 qubits, QPU B: 3 qubits) with four cross-QPU remote controlled-phase gates. Qubit reordering eliminates the SWAP layer.
 
 </td>
 <td width="33%" valign="top">
 
-**🔴 &nbsp; Entanglement Generation**
+**🔴 &nbsp; Bell Pair Fidelity**
 
-Cross-QPU Bell state creation using noisy remote gates over CM-modeled communication channels.
+Cross-QPU Bell state fidelity as a function of fiber length and fiber type, benchmarked for both Cat-Comm and TP1 protocols across four ITU fiber standards.
 
 </td>
 </tr>
@@ -166,9 +242,11 @@ Cross-QPU Bell state creation using noisy remote gates over CM-modeled communica
 | Package | Version | Role |
 |---------|---------|------|
 | [qiskit](https://qiskit.org/) | `2.3.0` | Circuit construction and execution |
-| [qutip](https://qutip.org/) | `5.2.3` | Collisional model simulation |
+| [qutip](https://qutip.org/) | `5.2.3` | Collisional model unitary simulation |
 | [matplotlib](https://matplotlib.org/) | `3.10.8` | Figure plotting |
 | [numpy](https://numpy.org/) | `2.4.2` | Numerical computation |
+| [qiskit-ibm-runtime](https://github.com/Qiskit/qiskit-ibm-runtime) | — | IBM Quantum hardware execution |
+| [qiskit-aer](https://github.com/Qiskit/qiskit-aer) | — | Local Aer simulator |
 
 ---
 
@@ -208,6 +286,8 @@ Cross-QPU Bell state creation using noisy remote gates over CM-modeled communica
 </td>
 </tr>
 </table>
+
+Full API documentation is available at **[qdcem.readthedocs.io](https://qdcem.readthedocs.io/en/latest/index.html)**.
 
 ---
 
