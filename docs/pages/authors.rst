@@ -11,13 +11,13 @@ Authors
    * - Name
      - Affiliation
    * - Seyed Navid Elyasi
-     - Dpertment of Electtrical Engineering, Chalmers University of Technology, Sweden
+     - Department of Electrical Engineering, Chalmers University of Technology, Sweden
    * - Paolo Monti
-     - Dpertment of Electtrical Engineering, Chalmers University of Technology, Sweden
+     - Department of Electrical Engineering, Chalmers University of Technology, Sweden
    * - Jun Li
      - School of Electrical and Information Engineering, Soochow University, China
    * - Rui Lin
-     - Dpertment of Electtrical Engineering, Chalmers University of Technology, Sweden
+     - Department of Electrical Engineering, Chalmers University of Technology, Sweden
 
 License
 -------

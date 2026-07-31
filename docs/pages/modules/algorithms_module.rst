@@ -51,6 +51,41 @@ with final measurements on QPUA (``c[4]``) and QPUB (``c[5]``).
 
 ----
 
+qft_circuit
+--------------
+
+.. code-block:: python
+
+   qft_circuit(n)
+
+Constructs the monolithic (non-distributed) ``n``-qubit Quantum Fourier
+Transform circuit, as defined in Section 2.D of the paper. For each
+qubit ``j`` (0 to n-1) the circuit applies a Hadamard gate followed by
+controlled-phase rotations ``R_k`` (angle ``2\u03c0/2^k``) to every
+subsequent qubit, then a final SWAP layer reverses the qubit order to
+match the standard QFT output convention. For ``n = 5`` this produces
+5 Hadamard gates, 10 controlled-phase rotations, and 2 SWAP gates
+(Figure 8a of the paper). It is used as the noiseless/monolithic
+baseline against which ``qft_5qubit_annotated_Distributed`` is
+compared.
+
+**Parameters**
+
+.. list-table::
+   :header-rows: 1
+   :widths: 25 20 55
+
+   * - Name
+     - Type
+     - Description
+   * - ``n``
+     - ``int``
+     - Number of qubits.
+
+**Returns** ``QuantumCircuit`` — monolithic, unmeasured QFT circuit.
+
+----
+
 qft_5qubit_annotated_Distributed
 ----------------------------------
 
@@ -90,3 +125,15 @@ significant qubit) appears first, yielding a SWAP-free implementation
 
 **Returns** ``QuantumCircuit`` — 9-qubit distributed QFT circuit with
 processing qubits unmeasured.
+
+----
+
+Internal noise-injection helpers
+-----------------------------------
+
+``Algorithms.py`` also defines local copies of ``M_Unitary``,
+``remote_cz``, ``remote_cx``, and ``remote_cp`` that are functionally
+identical to the versions in :doc:`remotegates` and are used
+internally by ``qft_5qubit_annotated_Distributed`` and
+``grover_2qubit_annotated_Distributed``. See :doc:`remotegates` for
+full parameter documentation of these primitives.

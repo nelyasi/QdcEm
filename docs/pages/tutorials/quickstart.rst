@@ -6,7 +6,7 @@ gate across two virtual QPUs on a single superconducting chip. We
 illustrate this by constructing a two-QPU layout and applying a noisy
 remote CNOT gate.
 
-- `Download the Main notebook <https://github.com/<your-org>/QdcEm/blob/main/Main.ipynb>`__, or
+- `Download the Main notebook <https://github.com/nelyasi/QdcEm/blob/main/Main.ipynb>`__, or
 - read through the text below and code along.
 
 **Contents:**

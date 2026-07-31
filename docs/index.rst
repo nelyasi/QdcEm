@@ -13,7 +13,7 @@ QdcEm: Quantum Data Center Emulator
 .. image:: https://img.shields.io/badge/arXiv-2509.04029-red
    :target: https://arxiv.org/abs/2509.04029
 
-.. image:: https://img.shields.io/badge/Qiskit-2.4.1-6929C4
+.. image:: https://img.shields.io/badge/Qiskit-2.3.0-6929C4
    :target: https://qiskit.org
 
 **A hardware-compatible framework for emulating Quantum Data Centers on

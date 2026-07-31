@@ -27,24 +27,28 @@ for all experiments reported in the paper (as of February 27, 2026):
    * - Package
      - Version
    * - ``qiskit``
-     - ``0.52.0``
+     - ``2.3.0``
    * - ``qutip``
-     - ``5.0.1``
+     - ``5.2.3``
    * - ``matplotlib``
-     - ``3.9.1``
+     - ``3.10.8``
    * - ``numpy``
-     - ``1.27.0``
+     - ``2.4.2``
 
 Install all dependencies at once::
 
-   $ pip install qiskit==0.52.0 qutip==5.0.1 matplotlib==3.9.1 numpy==1.27.0
+   $ pip install qiskit==2.3.0 qutip==5.2.3 matplotlib==3.10.8 numpy==2.4.2
+
+For IBM Quantum hardware execution, also install::
+
+   $ pip install qiskit-ibm-runtime qiskit-aer
 
 Cloning the repository
 -----------------------
 
 ::
 
-   $ git clone https://github.com/<your-org>/QdcEm.git
+   $ git clone https://github.com/nelyasi/QdcEm.git
    $ cd QdcEm
 
 Verifying the installation
