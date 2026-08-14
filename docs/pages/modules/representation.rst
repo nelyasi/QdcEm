@@ -78,6 +78,9 @@ G-654-E, G-655-D, and a numerical (AerSimulator) reference.
      - ``float``
      - Transducer coupling constant used in this experiment.
 
+**Returns** ``matplotlib.figure.Figure`` — the figure object created by
+the plot.
+
 ----
 
 fourier_plot
